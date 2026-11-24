@@ -78,7 +78,6 @@
     <td align="center" width="50%">
       <p><b><a href="https://github.com/genius-pei/journal-test">journal</a></b> — header-only C++11 同步/异步日志库</p>
       <a href="https://github.com/genius-pei/journal-test">
-        <img src="https://img.shields.io/github/stars/genius-pei/journal-test?style=flat-square&label=stars&color=00599C&labelColor=333333&logo=github&logoColor=white" alt="stars" />
         <img src="https://img.shields.io/badge/license-MIT-00599C?style=flat-square" alt="License MIT" />
         <img src="https://img.shields.io/badge/C%2B%2B-11-00599C?style=flat-square" alt="C++11" />
         <img src="https://img.shields.io/github/actions/workflow/status/genius-pei/journal-test/ci.yml?style=flat-square&label=CI" alt="CI" />
@@ -91,10 +90,9 @@
     <td align="center" width="50%">
       <p><b><a href="https://github.com/genius-pei/oj-vibe_coding">MiniOJ</a></b> — 在线判题系统</p>
       <a href="https://github.com/genius-pei/oj-vibe_coding">
-        <img src="https://img.shields.io/github/stars/genius-pei/oj-vibe_coding?style=flat-square&label=stars&color=00599C&labelColor=333333&logo=github&logoColor=white" alt="stars" />
         <img src="https://img.shields.io/badge/C%2B%2B-17-00599C?style=flat-square" alt="C++17" />
         <img src="https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL 8" />
-        <img src="https://img.shields.io/badge/demo-online-2ea44f?style=flat-square" alt="demo online" />
+        <img src="https://img.shields.io/website?url=http%3A%2F%2F122.51.84.172&style=flat-square&label=demo&up_message=online&down_message=offline&up_color=2ea44f" alt="demo status" />
       </a>
       <br />
       <sub><code>setrlimit</code> 三重沙箱 · 8 路 worker · 六种判定 → <a href="http://122.51.84.172"><b>在线演示</b></a></sub>
