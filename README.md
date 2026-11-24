@@ -1,83 +1,176 @@
-# 裴奕名 · Yiming Pei
+<!--
+  GitHub Profile README · 裴奕名 / genius-pei
+  主题色：#00599C（ISO C++ 蓝）
+  GitHub 会剥离 HTML 行内 style，所以带颜色的文字一律用 shields.io 徽章实现。
+  改配色：全局替换 00599C / 7FB3D5 即可。
+-->
 
-**C++ / Linux 系统编程** · 江汉大学 智能制造工程 2027 届 · 武汉
+<div align="center">
 
-写系统底层，也写跑在上面的完整应用。下面两个项目从并发模型、资源隔离到部署上线都是我自己做的——代码、测试、CI、设计文档都在仓库里，能点开验证。
+  <!-- 动态打字效果标题 -->
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=900&color=00599C&center=true&vCenter=true&width=620&lines=Hi%2C+I'm+Yiming+Pei;%E5%86%99%E7%B3%BB%E7%BB%9F%E5%BA%95%E5%B1%82%EF%BC%8C%E4%B9%9F%E5%86%99%E8%B7%91%E5%9C%A8%E4%B8%8A%E9%9D%A2%E7%9A%84%E5%BA%94%E7%94%A8;C%2B%2B+%2F+Linux+systems+programming;header-only+libraries+%C2%B7+hand-written+STL" alt="Typing SVG" />
+  </a>
 
-`C++11/17` · `Linux 系统调用` · `并发与资源限制` · `MySQL 8` · `AI Agent 协同开发`
+  <br />
 
----
+  <img src="https://img.shields.io/badge/-C%2B%2B%20%2F%20Linux%20%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B-00599C?style=flat-square" alt="C++ / Linux" />
+  <img src="https://img.shields.io/badge/-%E6%B1%9F%E6%B1%89%E5%A4%A7%E5%AD%A6%20%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0%202027%20%E5%B1%8A-7FB3D5?style=flat-square" alt="Jianghan University" />
+  <img src="https://img.shields.io/badge/-%E6%AD%A6%E6%B1%89-7FB3D5?style=flat-square" alt="Wuhan" />
 
-## 精选项目
+</div>
 
-### MiniOJ — 在线判题系统
+<br />
 
-`C++17` `cpp-httplib` `MySQL 8` `Linux` `rlimit 沙箱`
+<p align="center">
+  <img src="https://img.shields.io/badge/-ABOUT%20ME-00599C?style=flat-square" alt="ABOUT ME" />
+</p>
 
-fork/exec 起子进程跑用户代码，进子进程后 `setrlimit` 上三重硬限制，父进程按 wall clock 兜底 kill，8 路评测 worker 由条件变量队列调度，输出六种判定：AC / WA / TLE / MLE / CE / RE。
+<p align="center">
+  写系统底层，也写跑在上面的完整应用。<br />
+  下面的项目从并发模型、资源隔离到部署上线都是我自己做的 —— <b>代码、测试、CI、设计文档都在仓库里，能点开验证</b>。
+</p>
 
-- **沙箱参数**：CPU 时间 = 题目时限 + 1s（`RLIMIT_CPU`）；虚拟地址空间 = 2 × 内存限制（默认 256MB 题 → 512MB `RLIMIT_AS`，RSS 超限判 MLE）；单次输出 16MB 上限（`RLIMIT_FSIZE`）；编译超时 3s，默认测例时限 500ms
-- 子进程 stdin / stdout 走管道全量 drain，读端不被用户程序的输出阻塞；并发评测靠 worker 队列而不是每请求 fork
-- 实测 200 并发提交 P95 判题 1.4s，队列满时排队而非拒绝
-- 5 道题已上线，C/C++ 秒级评测 → **[在线演示](http://122.51.84.172)**
+<br />
 
-### journal — header-only 的 C++11 同步/异步日志库
+<p align="center">
+  <img src="https://img.shields.io/badge/-TECH%20STACK-00599C?style=flat-square" alt="TECH STACK" />
+</p>
 
-`C++11` `header-only` `CMake` `GitHub Actions` `MIT`
+<table align="center">
+  <tr>
+    <td align="center">
+      <p><b>语言</b></p>
+      <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white" alt="C" />
+      <img src="https://img.shields.io/badge/C%2B%2B%2011%2F17-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
+      <br />
+      <img src="https://img.shields.io/badge/STL-%E6%89%8B%E5%86%99%E5%AE%B9%E5%99%A8-5C6BC0?style=flat-square" alt="STL" />
+      <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL" />
+    </td>
+    <td align="center">
+      <p><b>系统</b></p>
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+      <img src="https://img.shields.io/badge/fork%2Fexec-333333?style=flat-square" alt="fork/exec" />
+      <br />
+      <img src="https://img.shields.io/badge/setrlimit-333333?style=flat-square" alt="setrlimit" />
+      <img src="https://img.shields.io/badge/pthread-333333?style=flat-square" alt="pthread" />
+      <img src="https://img.shields.io/badge/MySQL%208-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+    </td>
+    <td align="center">
+      <p><b>工具</b></p>
+      <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+      <img src="https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white" alt="CMake" />
+      <br />
+      <img src="https://img.shields.io/badge/GTest-0A7E07?style=flat-square" alt="GTest" />
+      <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+    </td>
+  </tr>
+</table>
 
-1093 行，零依赖，`#include "logs/yimingcode.h"` 即用。
+<br />
 
-- **双缓冲异步落盘**：生产者只做一次内存拷贝进 buffer，后台线程整块 swap 后批量 write，调用方不在 `write` 上阻塞
-- **100 万条 64 字节记录**（i5-12400 / g++ 13.2 / `-O2`）：异步 **189 万条/秒**，同步 38 万条/秒，**约 5 倍**；4 线程异步吞吐接近线性
-- 按大小 / 时间窗口滚动，可扩展 Sink（Stdout / File / RollBySize，自定义只需继承一个类），格式串可控 `%d %t %c %f:%l %p %m`
-- GitHub Actions 每次 push 编译 example + extend 并跑回归脚本；异步写入异常不逃出工作线程，`errorCount()` 可查失败批次
-- 边界写在 README 里：异步总耗时包含 worker 排空，不包含 `fsync` 持久性 → [journal-test](https://github.com/genius-pei/journal-test)
+<p align="center">
+  <img src="https://img.shields.io/badge/-PROJECTS-00599C?style=flat-square" alt="PROJECTS" />
+</p>
 
----
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <p><b><a href="https://github.com/genius-pei/journal-test">journal</a></b> — header-only C++11 同步/异步日志库</p>
+      <a href="https://github.com/genius-pei/journal-test">
+        <img src="https://img.shields.io/github/stars/genius-pei/journal-test?style=flat-square&label=stars&color=00599C&labelColor=333333&logo=github&logoColor=white" alt="stars" />
+        <img src="https://img.shields.io/badge/license-MIT-00599C?style=flat-square" alt="License MIT" />
+        <img src="https://img.shields.io/badge/C%2B%2B-11-00599C?style=flat-square" alt="C++11" />
+        <img src="https://img.shields.io/github/actions/workflow/status/genius-pei/journal-test/ci.yml?style=flat-square&label=CI" alt="CI" />
+      </a>
+      <br />
+      <sub>双缓冲异步落盘 · 1093 行零依赖 · <b>189 万条/秒</b>，比同步快 5×</sub>
+      <br />
+      <sub><a href="https://github.com/genius-pei/journal-test/releases/tag/v1.0.1">v1.0.1 Release</a></sub>
+    </td>
+    <td align="center" width="50%">
+      <p><b><a href="https://github.com/genius-pei/oj-vibe_coding">MiniOJ</a></b> — 在线判题系统</p>
+      <a href="https://github.com/genius-pei/oj-vibe_coding">
+        <img src="https://img.shields.io/github/stars/genius-pei/oj-vibe_coding?style=flat-square&label=stars&color=00599C&labelColor=333333&logo=github&logoColor=white" alt="stars" />
+        <img src="https://img.shields.io/badge/C%2B%2B-17-00599C?style=flat-square" alt="C++17" />
+        <img src="https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL 8" />
+        <img src="https://img.shields.io/badge/demo-online-2ea44f?style=flat-square" alt="demo online" />
+      </a>
+      <br />
+      <sub><code>setrlimit</code> 三重沙箱 · 8 路 worker · 六种判定 → <a href="http://122.51.84.172"><b>在线演示</b></a></sub>
+      <br />
+      <sub>AC / WA / TLE / MLE / CE / RE</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <p><b><a href="https://github.com/genius-pei/cpp-practice">cpp-practice</a></b> — 手写 STL 与 C 数据结构</p>
+      <a href="https://github.com/genius-pei/cpp-practice">
+        <img src="https://img.shields.io/badge/vector%20%2F%20list%20%2F%20string-%E6%A8%A1%E6%9D%BF%E5%AE%B9%E5%99%A8-00599C?style=flat-square" alt="containers" />
+        <img src="https://img.shields.io/badge/avl%20%2F%20rb--tree-%E5%B9%B3%E8%A1%A1%E6%A0%91-00599C?style=flat-square" alt="trees" />
+        <img src="https://img.shields.io/badge/hash--table-%E5%BC%80%E6%94%BE%E5%AE%9A%E5%9D%80-00599C?style=flat-square" alt="hash" />
+        <img src="https://img.shields.io/badge/8%20sorts-%E4%B8%83%E5%A4%A7%E6%8E%92%E5%BA%8F-7FB3D5?style=flat-square" alt="sorts" />
+        <img src="https://img.shields.io/badge/mini%20shell-89%20lines-7FB3D5?style=flat-square" alt="shell" />
+      </a>
+    </td>
+  </tr>
+</table>
 
-## 基本功练习
+<br />
 
-### cpp-practice — 早期练习按主题归拢
+<p align="center">
+  <img src="https://img.shields.io/badge/-HOW%20I%20WORK-00599C?style=flat-square" alt="HOW I WORK" />
+</p>
 
-`C` `C++11` `Linux`
+<p align="center">
+  两个项目都是 <b>AI Agent 协同开发</b>，但验收标准由我先定死：<br />
+  先写 <code>spec.md</code>，把每条要求写成<b>可测的验收项</b> → AI 分阶段交付 → 每轮 diff 我自己跑 CI 再逐行读，不通过不进 <code>main</code>。<br />
+  <sub>它写得比我快，但错得也比我自信 —— 比如异步日志的 <code>stop()</code> 第一版直接 <code>join</code>，会丢掉缓冲区里没落盘的数据；是我改成「置停止标志 → 排空队列 → 再 join」并补上失败批次计数。</sub>
+</p>
 
-手写哈希表（开放定址 + 状态标记删除 + BKDR 字符串哈希，在其上包出 `UnorderedMap` / `UnorderedSet`，百万级数据对比 `std::set`）、手写 `string` 类、RAII 智能指针、`malloc/free` vs `new/delete`、`fork` / `wait` 与终端进度条。
+<br />
 
-→ [cpp-practice](https://github.com/genius-pei/cpp-practice)
+<p align="center">
+  <img src="https://img.shields.io/badge/-CONTRIBUTION-00599C?style=flat-square" alt="CONTRIBUTION" />
+</p>
 
----
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/genius-pei/genius-pei/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/genius-pei/genius-pei/output/github-snake.svg" />
+    <img alt="github contribution snake" src="https://raw.githubusercontent.com/genius-pei/genius-pei/output/github-snake.svg" />
+  </picture>
+</div>
 
-## 工作方式
+<br />
 
-两个项目都是 AI Agent 协同开发，但**验收标准由我先定死**：
+<p align="center">
+  <img src="https://img.shields.io/badge/-WRITING-00599C?style=flat-square" alt="WRITING" />
+</p>
 
-1. 先写 `spec.md`，把每一条要求写成可测的验收项（比如「异步落盘不得丢记录」「停止后不再接受新数据」），不是写需求散文
-2. AI 按阶段交付实现，每一轮 diff 我自己跑一遍 CI 再逐行读，不通过不进 `main`
-3. 读不懂的地方去查标准 / 源码，不靠 AI 的自信——它写得比我快，但错得也比我自信
+<p align="center">
+  C++ / Linux / MySQL 的踩坑记录，60+ 篇 →
+  <a href="https://blog.csdn.net/2401_85487070"><img src="https://img.shields.io/badge/CSDN-blog-FC5531?style=flat-square&logo=csdn&logoColor=white" alt="CSDN" /></a>
+</p>
 
-举个真实的例子：异步日志的 `stop()` 第一版直接 `join` 后台线程，缓冲区里还没落盘的数据会被丢掉。我改成置停止标志 → 排空队列 → 再 join，并补上失败批次计数和时序测试。这类「看起来对、边界上错」的地方是我审代码的重点。
+<br />
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/-CONTACT-00599C?style=flat-square" alt="CONTACT" />
+</p>
 
-## 技能
+<p align="center">
+  <a href="mailto:18808667810@163.com"><img src="https://img.shields.io/badge/18808667810%40163.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="email" /></a>
+  <a href="https://github.com/genius-pei"><img src="https://img.shields.io/badge/%40genius--pei-181717?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
+</p>
 
-| | |
-|---|---|
-| 语言 | C / C++（C++11 / 17）、STL、数据结构与算法 |
-| 系统 | Linux、fork/exec、信号量、条件变量、`setrlimit`、管道与 FD 管理 |
-| 工具 | Git、CMake、GTest、Playwright、GitHub Actions |
-| 数据 | MySQL 8（连接池、预处理、事务） |
+<p align="center">
+  <sub>目前：journal 已发布 v1.0.1（补齐 benchmark 数据），在给 fmt 的格式化层提第一个上游 issue。</sub>
+</p>
 
----
-
-## 写东西
-
-C++ / Linux / MySQL 的踩坑记录，60+ 篇 → [blog.csdn.net/2401_85487070](https://blog.csdn.net/2401_85487070)
-
----
-
-## 联系
-
-📮 18808667810@163.com · 🐙 [@genius-pei](https://github.com/genius-pei)
-
-<sub>目前：journal-test 已发布 v1.0.1（补齐 benchmark 数据），同时在读 fmt 的格式化层实现，准备从 issue 开始参与上游。</sub>
+<!-- ================= Footer Wave ================= -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/wave-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/wave.svg" />
+  <img alt="footer wave" width="100%" src="assets/wave.svg" />
+</picture>

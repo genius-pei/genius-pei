@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" width="1200" height="120">
+  <style>
+    .w1 { animation: drift 14s linear infinite; }
+    .w2 { animation: drift 22s linear infinite reverse; }
+    .w3 { animation: drift 30s linear infinite; }
+    @keyframes drift {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-600px); }
+    }
+  </style>
+  <path class="w3" fill="#7FB3D5" fill-opacity="0.35"
+        d="M0,64 C150,96 300,32 450,48 C600,64 750,112 900,96 C1050,80 1150,48 1200,56 L1200,120 L0,120 Z
+           M1200,64 C1350,96 1500,32 1650,48 C1800,64 1950,112 2100,96 L2100,120 L1200,120 Z" />
+  <path class="w2" fill="#7FB3D5" fill-opacity="0.55"
+        d="M0,80 C150,48 300,104 450,88 C600,72 750,24 900,40 C1050,56 1150,88 1200,80 L1200,120 L0,120 Z
+           M1200,80 C1350,48 1500,104 1650,88 C1800,72 1950,24 2100,40 L2100,120 L1200,120 Z" />
+  <path class="w1" fill="#00599C" fill-opacity="0.85"
+        d="M0,96 C150,72 300,112 450,104 C600,96 750,64 900,72 C1050,80 1150,104 1200,100 L1200,120 L0,120 Z
+           M1200,96 C1350,72 1500,112 1650,104 C1800,96 1950,64 2100,72 L2100,120 L1200,120 Z" />
+</svg>
