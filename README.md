@@ -98,6 +98,8 @@
       <sub><code>setrlimit</code> 三重沙箱 · 8 路 worker · 六种判定 → <a href="http://122.51.84.172"><b>在线演示</b></a></sub>
       <br />
       <sub>AC / WA / TLE / MLE / CE / RE</sub>
+      <br />
+      <sub>CPU 时限+1s · AS 2×内存 · 输出 16MB · 编译 3s</sub>
     </td>
   </tr>
   <tr>
