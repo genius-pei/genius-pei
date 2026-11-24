@@ -35,6 +35,18 @@ fork/exec 起子进程跑用户代码，进子进程后 `setrlimit` 上三重硬
 
 ---
 
+## 基本功练习
+
+### cpp-practice — 早期练习按主题归拢
+
+`C` `C++11` `Linux`
+
+手写哈希表（开放定址 + 状态标记删除 + BKDR 字符串哈希，在其上包出 `UnorderedMap` / `UnorderedSet`，百万级数据对比 `std::set`）、手写 `string` 类、RAII 智能指针、`malloc/free` vs `new/delete`、`fork` / `wait` 与终端进度条。
+
+→ [cpp-practice](https://github.com/genius-pei/cpp-practice)
+
+---
+
 ## 工作方式
 
 两个项目都是 AI Agent 协同开发，但**验收标准由我先定死**：
